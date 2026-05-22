@@ -32,4 +32,18 @@ Sehingga diperoleh responden sebanyak 63 mahasiswa Statistika. Data dikumpulkan 
 
 Analisis data dilakukan secara deskriptif untuk menggambarkan penilaian responden terhadap kualitas layanan Shopee, tingkat kepuasan, dan niat untuk menggunakan kembali aplikasi Shopee.
 
-## TAHAP ANALISIS DATA
+## ANALISIS DATA
+Analisis data dalam penelitian ini dilakukan menggunakan software R Studio dengan pendekatan statistik deskriptif. Sebelum melakukan analisis, terlebih dahulu dilakukan uji validitas dan uji reliabilitas untuk memastikan bahwa instrumen penelitian yang digunakan layak dan konsisten. Data yang telah dinyatakan valid dan reliabel kemudian dianalisis secara deskriptif untuk menggambarkan tingkat kepuasan mahasiswa Statistika terhadap layanan belanja online Shopee berdasarkan setiap aspek yang diukur. Tahapan analisis data adalah sebagai berikut:
+
+### UJI VALIDITAS
+Uji validitas dilakukan untuk mengetahui apakah setiap item pernyataan dalam kuesioner mampu mengukur apa yang seharusnya diukur. Pengujian menggunakan metode korelasi Pearson dengan membandingkan nilai r hitung setiap item terhadap r tabel. Dengan jumlah responden 63 mahasiswa dan taraf signifikansi 5%, diperoleh nilai r tabel sebesar 0,2483. Apabila r hitung > r tabel maka item dinyatakan valid.
+
+skor_total <- rowSums(item)
+r_tabel    <- 0.2483
+
+for (i in 1:ncol(item)) {
+  r_hitung <- cor(item[, i], skor_total, method = "pearson")
+  status   <- ifelse(r_hitung > r_tabel, "VALID ✅", "TIDAK VALID ❌")
+  cat(sprintf("%-20s | r hitung = %.4f | %s\n", colnames(item)[i], r_hitung, status))
+}
+
