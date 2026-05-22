@@ -15,4 +15,21 @@ Mahasiswa Statistika merupakan kelompok pengguna yang aktif dan mampu memberikan
 1.  mengetahui tingkat kepuasan mahasiswa Statistika terhadap layanan belanja online Shopee.
 2.  Untuk mengidentifikasi aspek layanan yang paling memengaruhi kepuasan mahasiswa Statistika dalam menggunakan Shopee.
 
-## METODOLOGI PENELITIAN
+## METODE PENELITIAN
+Penelitian ini menggunakan teknik nonprobability sampling dengan metode convenience sampling. Populasi dalam penelitian ini adalah mahasiswa Statistika yang pernah berbelanja menggunakan Shopee sebanyak 154 orang. Penentuan jumlah sampel menggunakan rumus Slovin:
+
+$$n = \frac{N}{1 + N \cdot e^2} = \frac{154}{1 + 154(0{,}12)^2} \approx 63 \text{ responden}$$
+
+Sehingga diperoleh responden sebanyak 63 mahasiswa Statistika. Data dikumpulkan melalui kuesioner dengan 10 pernyataan menggunakan skala Likert 1–5 dengan keterangan sebagai berikut:
+
+| Skor | Keterangan |
+|------|------------|
+| 1 | Sangat Tidak Setuju |
+| 2 | Tidak Setuju |
+| 3 | Netral |
+| 4 | Setuju |
+| 5 | Sangat Setuju |
+
+Analisis data dilakukan secara deskriptif untuk menggambarkan penilaian responden terhadap kualitas layanan Shopee, tingkat kepuasan, dan niat untuk menggunakan kembali aplikasi Shopee.
+
+## TAHAP ANALISIS DATA
