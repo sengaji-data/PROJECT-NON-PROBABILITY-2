@@ -41,9 +41,46 @@ Uji validitas dilakukan untuk mengetahui apakah setiap item pernyataan dalam kue
 skor_total <- rowSums(item)
 r_tabel    <- 0.2483
 
+```r
+skor_total <- rowSums(item)
+r_tabel    <- 0.2483
+
 for (i in 1:ncol(item)) {
   r_hitung <- cor(item[, i], skor_total, method = "pearson")
-  status   <- ifelse(r_hitung > r_tabel, "VALID ✅", "TIDAK VALID ❌")
+  status   <- ifelse(r_hitung > r_tabel, "VALID ", "TIDAK VALID ")
   cat(sprintf("%-20s | r hitung = %.4f | %s\n", colnames(item)[i], r_hitung, status))
 }
+```
 
+### UJI RELIABILITAS
+Uji reliabilitas dilakukan untuk mengetahui konsistensi dan keandalan instrumen penelitian yang digunakan. Pengujian menggunakan metode Cronbach's Alpha, di mana instrumen dinyatakan reliabel apabila nilai Alpha ≥ 0,70. Semakin tinggi nilai Alpha, semakin konsisten instrumen tersebut dalam mengukur variabel yang diteliti.
+
+```r
+alpha_val <- alpha(item)$total$raw_alpha
+status_r  <- ifelse(alpha_val >= 0.7, "RELIABEL ", "TIDAK RELIABEL ")
+cat(sprintf("Cronbach's Alpha = %.4f | %s\n", alpha_val, status_r))
+```
+### STATISTIK DESKRIPTIF
+Statistik deskriptif digunakan untuk menggambarkan karakteristik data secara umum. Analisis ini meliputi nilai rata-rata (mean), nilai tengah (median), dan standar deviasi (SD) dari setiap aspek layanan Shopee, sehingga dapat diketahui gambaran umum penilaian responden terhadap masing-masing aspek.
+
+```r
+desc <- describe(item)
+print(round(desc[, c("mean", "median", "sd", "min", "max")], 2))
+```
+### RATA-RATA PER ASPEK
+Rata-rata per aspek dihitung untuk mengidentifikasi aspek layanan mana yang memiliki nilai kepuasan tertinggi dan terendah menurut penilaian mahasiswa Statistika. Hasil ini kemudian diurutkan dari nilai tertinggi ke terendah untuk memudahkan interpretasi.
+
+```r
+rata <- colMeans(item)
+rata_sorted <- sort(rata, decreasing = TRUE)
+print(round(rata_sorted, 2))
+```
+### RATA-RATA TOTAL KEPUASAN
+Rata-rata total kepuasan dihitung untuk menentukan kategori tingkat kepuasan mahasiswa Statistika secara keseluruhan terhadap layanan belanja online Shopee. Kategorisasi dilakukan berdasarkan nilai rata-rata, di mana nilai ≥ 4 dikategorikan puas, nilai 3–4 dikategorikan cukup puas, dan nilai < 3 dikategorikan tidak puas.
+
+```r
+skor_total <- rowMeans(item)
+kategori <- ifelse(mean(skor_total) >= 4, "PUAS ",
+            ifelse(mean(skor_total) >= 3, "CUKUP PUAS ", "TIDAK PUAS "))
+cat(sprintf("Rata-rata Keseluruhan = %.2f | %s\n", mean(skor_total), kategori))
+```
