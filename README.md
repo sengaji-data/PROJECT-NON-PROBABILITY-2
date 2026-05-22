@@ -133,3 +133,6 @@ Berdasarkan hasil analisis secara keseluruhan, rata-rata total kepuasan mahasisw
 Berdasarkan hasil analisis data yang telah dilakukan, dapat ditarik kesimpulan sebagai berikut:
 1. Tingkat kepuasan mahasiswa Statistika terhadap layanan belanja online Shopee secara keseluruhan berada pada kategori PUAS dengan nilai rata-rata sebesar 4,38 dari skala 5. Hal ini menunjukkan bahwa mahasiswa Statistika merasa puas terhadap layanan yang diberikan oleh Shopee, mulai dari kemudahan penggunaan aplikasi, kualitas informasi produk, keamanan transaksi, metode pembayaran, hingga promo dan diskon yang ditawarkan.
 2. Aspek layanan yang paling memengaruhi kepuasan mahasiswa Statistika dalam menggunakan Shopee adalah Pilihan Produk dengan nilai rata-rata tertinggi sebesar 4,60. Sementara itu, aspek Keamanan Transaksi memiliki nilai rata-rata terendah sebesar 4,16 dan menjadi aspek yang perlu mendapat perhatian lebih untuk ditingkatkan oleh Shopee ke depannya.
+
+## LINK QUISIONER
+:https://docs.google.com/forms/d/e/1FAIpQLSdWQCO4jW8j_Qj5H0zu2nJ_yNI_TaKH4qkgGczibIzheZj06g/viewform?usp=publish-editor
