@@ -84,3 +84,52 @@ kategori <- ifelse(mean(skor_total) >= 4, "PUAS ",
             ifelse(mean(skor_total) >= 3, "CUKUP PUAS ", "TIDAK PUAS "))
 cat(sprintf("Rata-rata Keseluruhan = %.2f | %s\n", mean(skor_total), kategori))
 ```
+## HASIL DAN PEMBAHASAN
+### HASIL UJI VALIDITAS
+Uji validitas dilakukan untuk memastikan bahwa setiap item pernyataan dalam kuesioner mampu mengukur apa yang seharusnya diukur. Pengujian dilakukan menggunakan metode korelasi Pearson dengan membandingkan nilai r hitung setiap item terhadap r tabel. Dengan jumlah responden sebanyak 63 mahasiswa dan taraf signifikansi 5%, diperoleh nilai r tabel sebesar 0,2483. Suatu item dinyatakan valid apabila nilai r hitung lebih besar dari r tabel.
+Berdasarkan hasil pengujian, diperoleh hasil sebagai berikut:
+
+| Item | r Hitung | r Tabel | Status |
+|:---|:---:|:---:|:---:|
+| Kemudahan Aplikasi | 0.8323 | 0.2483 | VALID  |
+| Kemudahan Fitur | 0.8190 | 0.2483 | VALID |
+| Kecepatan Transaksi | 0.8151 | 0.2483 | VALID  |
+| Kualitas Informasi | 0.7324 | 0.2483 | VALID  |
+| Pilihan Produk | 0.8034 | 0.2483 | VALID  |
+| Keamanan Transaksi | 0.8602 | 0.2483 | VALID  |
+| Metode Pembayaran | 0.8073 | 0.2483 | VALID  |
+| Promo & Diskon | 0.5909 | 0.2483 | VALID  |
+| Kepuasan Layanan | 0.8292 | 0.2483 | VALID  |
+| Niat Pakai Ulang | 0.8267 | 0.2483 | VALID  |
+
+Hasil pengujian menunjukkan bahwa seluruh 10 item pernyataan memiliki nilai r hitung yang lebih besar dari r tabel (0,2483). Dengan demikian, semua item pernyataan dinyatakan valid dan layak digunakan sebagai instrumen penelitian untuk mengukur kepuasan mahasiswa Statistika terhadap layanan Shopee.
+
+### HASIL UJI RELIABILITAS
+Uji reliabilitas dilakukan untuk mengetahui sejauh mana instrumen penelitian dapat dipercaya dan konsisten dalam menghasilkan data yang sama apabila digunakan pada waktu yang berbeda. Pengujian menggunakan metode Cronbach's Alpha dengan kriteria nilai Alpha ≥ 0,70 dinyatakan reliabel.
+Hasil uji reliabilitas menunjukkan nilai Cronbach's Alpha sebesar 0,9298. Nilai tersebut jauh melampaui batas minimum 0,70 dan masuk dalam kategori excellent, yang berarti instrumen penelitian memiliki tingkat konsistensi yang sangat tinggi. Dengan demikian, instrumen yang digunakan dalam penelitian ini dinyatakan reliabel dan dapat dipercaya untuk mengukur kepuasan mahasiswa Statistika terhadap layanan belanja online Shopee.
+
+### HASIL STATISTIK DESKRIPTIF
+Analisis statistik deskriptif dilakukan untuk menggambarkan penilaian mahasiswa Statistika terhadap setiap aspek layanan Shopee. Hasil analisis meliputi nilai rata-rata (mean), nilai tengah (median), dan standar deviasi (SD) dari masing-masing aspek yang diukur. Berikut hasil statistik deskriptif yang diperoleh:
+
+| Aspek | Mean | Median | SD |
+|:---|:---:|:---:|:---:|
+| Pilihan Produk | 4.60 | 5.0 | 0.71 |
+| Niat Pakai Ulang | 4.52 | 5.0 | 0.67 |
+| Kemudahan Aplikasi | 4.48 | 5.0 | 0.74 |
+| Kemudahan Fitur | 4.39 | 4.0 | 0.66 |
+| Metode Pembayaran | 4.37 | 4.0 | 0.61 |
+| Kepuasan Layanan | 4.35 | 4.5 | 0.75 |
+| Kualitas Informasi | 4.32 | 4.0 | 0.65 |
+| Kecepatan Transaksi | 4.31 | 4.0 | 0.78 |
+| Promo & Diskon | 4.31 | 5.0 | 0.90 |
+| Keamanan Transaksi | 4.16 | 4.0 | 0.81 |
+
+Berdasarkan tabel di atas, aspek Pilihan Produk memiliki nilai rata-rata tertinggi sebesar 4,60 dengan standar deviasi 0,71. Hal ini menunjukkan bahwa mahasiswa Statistika merasa sangat puas dengan banyaknya pilihan produk yang tersedia di Shopee. Sementara itu, aspek Keamanan Transaksi memiliki nilai rata-rata terendah sebesar 4,16 dengan standar deviasi 0,81. Meskipun demikian, nilai tersebut masih tergolong tinggi dan menunjukkan bahwa mahasiswa Statistika tetap merasa puas terhadap aspek keamanan transaksi di Shopee, namun aspek ini perlu mendapat perhatian lebih untuk ditingkatkan dibandingkan aspek lainnya.
+
+### HASIL KEPUASAN KESELURUHAN
+Berdasarkan hasil analisis secara keseluruhan, rata-rata total kepuasan mahasiswa Statistika terhadap layanan belanja online Shopee adalah sebesar 4,38 dari skala 5. Nilai tersebut masuk dalam kategori PUAS, yang berarti mahasiswa Statistika secara keseluruhan merasa puas terhadap layanan yang diberikan oleh Shopee. Aspek yang paling memuaskan adalah pilihan produk yang tersedia, sedangkan aspek keamanan transaksi menjadi aspek yang perlu ditingkatkan meskipun masih dinilai baik oleh responden. Secara umum, Shopee dinilai telah memberikan layanan belanja online yang baik dan memuaskan bagi mahasiswa Statistika.
+
+## KESIMPULAN
+Berdasarkan hasil analisis data yang telah dilakukan, dapat ditarik kesimpulan sebagai berikut:
+1. Tingkat kepuasan mahasiswa Statistika terhadap layanan belanja online Shopee secara keseluruhan berada pada kategori PUAS dengan nilai rata-rata sebesar 4,38 dari skala 5. Hal ini menunjukkan bahwa mahasiswa Statistika merasa puas terhadap layanan yang diberikan oleh Shopee, mulai dari kemudahan penggunaan aplikasi, kualitas informasi produk, keamanan transaksi, metode pembayaran, hingga promo dan diskon yang ditawarkan.
+2. Aspek layanan yang paling memengaruhi kepuasan mahasiswa Statistika dalam menggunakan Shopee adalah Pilihan Produk dengan nilai rata-rata tertinggi sebesar 4,60. Sementara itu, aspek Keamanan Transaksi memiliki nilai rata-rata terendah sebesar 4,16 dan menjadi aspek yang perlu mendapat perhatian lebih untuk ditingkatkan oleh Shopee ke depannya.
